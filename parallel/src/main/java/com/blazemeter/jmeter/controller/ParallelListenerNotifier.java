@@ -21,7 +21,7 @@ public class ParallelListenerNotifier extends ListenerNotifier implements Serial
         SampleResult result = res.getResult();
         String label = result.getSampleLabel();
         synchronized (this) {
-            container.addSubResult(result);
+            //container.addSubResult(result);
             if (!res.getResult().isSuccessful()) {
                 container.setSuccessful(false);
             }
